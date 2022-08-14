@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVinKnowledge</title>
+    <link rel="icon" type="imagem/png" href="img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+
+</head>
+<body>
+    <div id="main"></div>
+    <main>
+    
+        <!--Campos de captação das informações-->
+        <section id="salva">
+            <img src="img/logo.png">
+            <form onsubmit="return false">
+            <p>Título:</p>
+            <input type="text" name="tithtml"  placeholder="Digite um título" id="tithtml"/>
+            <p>Linguagem/Skill:</p>
+            <input type="text" name="skillhtml"  placeholder="Digite uma linguagem ou skill" id="skillhtml" />
+            <p>Categoria:</p>
+            <select name="Categorias" id="cathtml" >
+                <option value=""></option>
+                <option value="FrontEnd">FrontEnd</option>
+                <option value="BackEnd">BackEnd</option>
+                <option value="FullStack">FullStack</option>
+                <option value="SoftSkill"> SoftSkill</option>
+            </select>
+            <p>Descrição:</p>
+            <textarea type="text" name="deshtml" placeholder="Escreva aqui o detalhamento da sua dica" id="deshtml" ></textarea>
+            <p>Vídeo do Youtube:</p>
+            <input type="text" name="vidhtml"  placeholder="https://www.youtube.com/embed/SEU_LINK" id="vidhtml">
+            <div id="limpasalvabt">
+                <button id="limpbt" onclick="limparInfo()">Limpar</button>
+                <button id="salvbt" onclick="salvarCard()">Salvar</button>
+            </form>
+            </div>
+    </section>
+
+    <!--Quantidade de cards-->
+    <section id="exibi">
+        <div id="cardquant">
+            <div>Total
+                <p id="total"></p>
+            </div>
+            <div>FrontEnd
+                <p id="frontend"></p>
+            </div>
+            <div>BackEnd
+                <p id="backend"></p>
+            </div>
+            <div>FullStack
+                <p id="fullstack"></p>
+            </div>
+            <div>SoftSkill
+                <p id="softskill"></p>
+            </div>
+        </div>
+
+        <!--Botões de buscar e limpar--> 
+        <div id="limpabusca">
+        <input type="text" name="buscahtml" placeholder="Busque aqui" id="buscahtml">
+        <button id="buscabt" onclick=""></button>
+        <button id="limpabuscabt" onclick=""></button>
+        <button id="resetacardbt" onclick=""></button>
+        </div>
+
+
+        <!--Cards dentro de um iframe-->        
+        <div id="cards">
+        </div>
+    </section>
+  </main>
+<script type="text/javascript" src="principal.js"></script>
+</body>
+</html>
